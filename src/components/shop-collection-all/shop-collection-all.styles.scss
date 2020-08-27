@@ -1,0 +1,67 @@
+.shop-card {
+  background-image: linear-gradient(
+    15deg,
+    rgb(41, 77, 119) 50%,
+    rgb(0, 82, 115) 50%,
+    rgb(119, 41, 83) 80%
+  ) !important;
+  height: 300px;
+  margin: 25px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+
+  .card-text {
+    position: absolute;
+    top: 170px;
+  }
+
+  .card-body {
+    width: 100%;
+    max-height: 90%;
+    background-color: transparent;
+    border: 2px solid white;
+  }
+
+  .card-footer {
+    width: 100%;
+    background-color: white;
+  }
+
+  /* Extra Small devices (portrait and small phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    min-width: calc(100vw - 1em);
+    height: calc(300px - 1em);
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 601px) and (max-width: 767px) and (orientation: landscape) {
+    min-width: calc(100vw - 1em);
+    height: calc(300px - 1em);
+  }
+
+  /* Medium devices (portrait tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (orientation: portrait) {
+    min-width: calc(300px - 1em);
+    height: calc(300px - 1em);
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (orientation: landscape) {
+    min-width: calc(300px - 1em);
+    height: calc(300px - 1em);
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) and (orientation: landscape) {
+    min-width: calc(300px - 1em);
+    height: calc(300px - 1em);
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1205px) and (orientation: landscape) {
+    min-width: calc(300px - 1em);
+    height: calc(300px - 1em);
+  }
+}

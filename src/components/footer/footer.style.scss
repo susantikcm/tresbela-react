@@ -1,0 +1,26 @@
+.footer {
+    background-color: #363537;
+    border-top: 1px solid #E7E7E7;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+
+.icons-setting {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    bottom: 5px;
+}
+  

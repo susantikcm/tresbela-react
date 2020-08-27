@@ -1,0 +1,43 @@
+//Hide checkboxes
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  margin: 0px;
+}
+
+//Style checkbox label
+input[type="checkbox"] + span {
+  font: 16pt;
+  color: #000;
+}
+
+//Add checkbox skin
+input[type="checkbox"] + span:before {
+  font: 16pt FontAwesome;
+  content: '\00f096';
+  display: inline-block;
+  width: 16pt;
+  padding: 2px 0 0 3px;
+  margin-right: 0.5em;
+}
+
+//Add checkbox checked skin
+input[type="checkbox"]:checked + span:before {
+  content: '\00f046';
+}
+
+//Add focus outline
+input[type="checkbox"]:focus + span:before {
+  outline: 1px dotted #aaa;
+}
+
+//Set gray color for disabled checkbox
+input[type="checkbox"]:disabled + span {
+  color: #999;
+}
+
+//Set hover shadow on non-disabled checkbox
+input[type="checkbox"]:not(:disabled) + span:hover:before {
+  text-shadow: 0 1px 2px #77F;
+}
